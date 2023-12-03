@@ -489,8 +489,9 @@ function isSafeInteger(number) {
  * 5.9  => 5
  * -5.1 => -6
  */
-function roundToSmallestInteger(/* number */) {
-  throw new Error('Not implemented');
+function roundToSmallestInteger(number) {
+  const result = Math.floor(number);
+  return result;
 }
 
 /**
@@ -503,8 +504,9 @@ function roundToSmallestInteger(/* number */) {
  * 5.1  => 6
  * -5.9 => -5
  */
-function roundToLargestInteger(/* number */) {
-  throw new Error('Not implemented');
+function roundToLargestInteger(number) {
+  const result = Math.ceil(number);
+  return result;
 }
 
 /**
@@ -597,8 +599,9 @@ function getRandomInteger(/* min, max */) {
  * @example:
  * 3, 4 => 5
  */
-function getHypotenuse(/* a, b */) {
-  throw new Error('Not implemented');
+function getHypotenuse(a, b) {
+  const result = Math.hypot(a, b);
+  return result;
 }
 
 /**
